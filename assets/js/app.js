@@ -46,9 +46,7 @@ function seleccionar(link) {
 }
 
 //Código para el buscador de perfiles de Github
-const btnSearch =  document.querySelector(".search-section a");
 const inputUser =  document.querySelector(".search-section input");
-const mainContainer =  document.querySelector(".main-wraper");
 const containerSection =  document.querySelector(".container-section");
 
 const url = "https://api.github.com/users/";
