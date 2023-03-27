@@ -24,7 +24,7 @@ const sr = ScrollReveal({
 })
 
 sr.reveal(`.home-swiper, .about, .contenido-seccion`)
-sr.reveal(`.contenido-seccion, .col-resumen, .proyecto`, {interval:700})
+sr.reveal(`.contenido-seccion, .col-resumen`, {interval:700})
 sr.reveal(`.proyecto-1, .proyecto-3`, {origin: "left"})
 sr.reveal(`.proyecto-2, .proyecto-4`, {origin: "right"})
 

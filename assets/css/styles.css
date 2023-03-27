@@ -184,6 +184,7 @@ button{
 #header .nav__menu .nav__list .nav__item .seleccionado {
   color: #00a9d4;
   font-weight: var(--font-medium);
+  text-transform: uppercase;
 
 }
 
@@ -840,10 +841,10 @@ button{
   }
         
   #portafolio .fila .proyecto {
-    max-width: 85vw;
+    max-width: 90vw;
     position: relative;
     display: inline-block;
-    margin-bottom: 20px;
+    margin-bottom: 15px;
   }
         
   #portafolio .fila .proyecto img {
@@ -947,6 +948,7 @@ button{
     flex-direction: row;
     column-gap: 3rem;
   }
+
   .nav__link{
     text-transform: initial;
     font-weight: initial;
