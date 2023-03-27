@@ -744,9 +744,71 @@ button{
       margin-top: 10px;
       margin-bottom: 30px;
   }
+
+  .main-wraper {
+    width: 90%;   
+  }  
+
+  .row-left {
+    width: 20%;
+    padding-top: 15px;
+  }
+  .row-left img{
+    width: 95%;
+    /* border-radius: 50%; */
+    /* border: 5px solid #4d4d4d; */
+  }
+  .row-right {
+    width: 80%;
+  }
+
+  .row-right h3{
+    padding-top: 5px;
+    font-size: 15px;
+  }
+
+  .row-right p{
+    padding-top: 10px;
+    font-size: 12px;
+  }
+
+  .stats-user span{
+    font-weight: 600;
+    font-size: 11px;
+  }
+  .link-repos {
+    margin-bottom: 4%;
+  }
+  .link-repos a{
+    font-size: 12px;
+    margin-right: 3px;
+    padding: 1px 4px 4px;
+    margin-bottom: 5px;
+  }
+  
+  .search-section {
+    display: flex;
+    gap: 40px;
+    justify-content: center;
+    margin-bottom: 4%;
+  }
+  .search-section input{
+    width: 60%;
+    height: 50px;
+    text-transform:uppercase;
+    outline: none;
+    border: 0px solid;
+    font-size: 15px;
+    color: #fff;
+    border-bottom: 1px solid;
+    background-color: #ff000000;
+    text-align: center;
+  }
+
   .contacto .contenido-seccion .fila{
       display: block;
   }
+
 }
 
 
@@ -771,6 +833,7 @@ button{
     grid-template-columns: .8fr;
     justify-content: center;
   }
+  
 }
 
 /* For medium devices */
@@ -850,28 +913,6 @@ button{
     width: 250px;
   }
 
-  .trick__container{
-    grid-template-columns: repeat(3, 200px);
-    justify-content: center;
-    gap: 2rem;
-  }
-
-  .discount__container{
-    grid-template-columns: repeat(2, max-content);
-    justify-content: center;
-    align-items: center;
-    column-gap: 3rem;
-    padding: 3rem 0;
-    border-radius: 3rem;
-  }
-  .discount__img{
-    width: 350px;
-    order: -1;
-  }
-  .discount__data{
-    padding-right: 6rem;
-  }
-
   .newsletter__container{
     grid-template-columns: .5fr;
   }
@@ -935,16 +976,6 @@ button{
     padding-right: 2rem;
   }
 
-  .category__container{
-    column-gap: 8rem;
-  }
-  .category__img{
-    width: 200px;
-  }
-
-  /* .about__container{
-    column-gap: 7rem;
-  } */
   .about__img{
     width: 300px;
     border-radius: 20px;
@@ -954,7 +985,6 @@ button{
   }
 
   .fila .col p{
-    /* max-width: 700px; */
     font-size: .9rem;
     margin: auto;
     color: #88abc2;
@@ -984,39 +1014,6 @@ button{
     display: block;
     font-weight: bold;
     margin: 8px 0;
-  }
-
-  .trick__container{
-    gap: 3.5rem;
-  }
-  .trick__content{
-    border-radius: 1.5rem;
-  }
-  .trick__img{
-    width: 110px;
-  }
-  .trick__title{
-    font-size: var(--h3-font-size);
-  }
-
-  .discount__container{
-    column-gap: 7rem;
-  }
-
-  .new__content{
-    width: 310px;
-    border-radius: 1rem;
-    padding: 2rem 0;
-  }
-  .new__img{
-    width: 150px;
-  }
-  .new__img,
-  .new__subtitle{
-    margin-bottom: var(--mb-1);
-  }
-  .new__title{
-    font-size: var(--h3-font-size);
   }
 
   .footer__copy{
