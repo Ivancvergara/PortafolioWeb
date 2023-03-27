@@ -1,0 +1,456 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Portafolio</title>
+    <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"/>
+    <link rel="stylesheet" href="./assets//css/styles.css" />
+  </head>
+  <body>
+    <!-- #region ENCABEZADO -->
+    <header class="header" id="header">
+      <nav class="nav container">
+        <a href="#" class="nav__logo">
+          IICV
+        </a>
+        <div class="nav__menu" id="nav-menu">
+          <ul class="nav__list" id="nav__list">
+            <li class="nav__item"><a href="#home" class="seleccionado nav__link active-link" onclick="seleccionar(this)">Inicio</a></li>
+            <li class="nav__item"><a href="#about" class="nav__link" onclick="seleccionar(this)">Acerca de Mí</a></li>
+            <li class="nav__item"><a href="#resumen" class="nav__link" onclick="seleccionar(this)">Resumen</a></li>
+            <li class="nav__item"><a href="#habilidades" class="nav__link" onclick="seleccionar(this)">Habilidades</a></li>
+            <li class="nav__item"><a href="#portafolio" class="nav__link" onclick="seleccionar(this)">Portafolio</a></li>
+            <li class="nav__item"><a href="#contacto" class="nav__link" onclick="seleccionar(this)">Contacto</a></li>
+          </ul>
+          <div class="nav__close" id="nav-close">
+            <i class="bx bx-x"></i>
+          </div>
+        </div>
+        <div class="nav__toggle" id="nav-toggle">
+          <i class="bx bx-grid-alt"></i>
+        </div>
+      </nav>
+    </header>
+    <!-- #endregion -->
+
+    <!-- #region Principal-->
+    <main class="main">
+      
+      <!--Menu inicial-->
+      <section class="home container" id="home">
+        <div>
+          <div>
+            <section>
+              <div class="home__content grid">
+                <div class="home__group">
+                  <img src="assets/img/home-img.jpg" alt="" class="home__img"/>
+                </div>
+                <div class="home__data">
+                  <h1 class="home__title">
+                    Irving Iván
+                    Cuevas Vergara
+                  </h1>
+                  <h3 class="home__subtitle">Licenciado en Sistemas Computacionales Administrativos</h3>
+                </div>
+              </div>
+            </section>
+        </div>
+      </section>
+
+      <!--Acerca de-->
+      <section class="section about" id="about">
+        <div class="about__container container grid">
+          <div class="about__data">
+            <h2 class="section__title about__title" >
+              Acerca de Mí
+              <br/>
+            </h2>
+            <h3 class="section__subtitle">Hola. Soy <p class="name"> Iván Cuevas</p></h3>
+            <p class="about__description">
+              Tengo 24 años. Graduado de la licenciatura en Sistemas Computacionales Administrativos en la Universidad Veracruzana.
+              Actualmente con un gusto y gran interés por convertirme en desarrollador, principalmente en Frontend.
+              Esperando encontrar una oportunidad laboral como desarrollador, para aplicar y adquirir nuevos conocimientos.
+            </p>
+            <div class="fila">
+              <div class="col">
+                <i class="fa-solid fa-user"></i>
+                <span class="titulo-detalle">Perfil</span>
+                <p>Licenciado en Sistemas Computacionales Administrativos</p>
+              </div>
+              <div class="col">
+                <i class="fa-solid fa-location-pin"></i>
+                <span class="titulo-detalle">Ubicación</span>
+                <p>Poza Rica, Veracruz</p>
+              </div>
+              <div class="col">
+                <i class="fa-solid fa-flag"></i>
+                <span class="titulo-detalle">Intereses</span>
+                <p>Manualidades, Aprendizaje online, Gimnasio</p>
+              </div>
+            </div>
+            <a href="./assets/files/CV_CuevasVergaraIrvingIván.pdf" class="button" download=""> DESCARGAR CV</a>
+          </div>
+
+          <img src="assets/img/about-img.jpg" alt="" class="about__img" />
+        </div>
+      </section>
+      <section class="resumen" id="resumen">
+        <div class="contenido-seccion">
+          <h2 class="titulo-seccion">Resumen</h2>
+          <h3>Mi preparación y experiencia</h3>
+          <div class="info">
+            <div class="col col-resumen">
+              <span class="titulo">Educación</span>
+              <table>
+                <tr>
+                  <td class="datos">
+                    <h3>AGOSTO 2016 - JULIO 2020</h3>
+                  </td>
+                  <td rowspan="2" class="descripcion">
+                      Tuxpan, Veracruz
+                  </td>
+                </tr>
+                <tr>
+                  <td>
+                    <h4>Lic. en Sistemas Computacionales Administrativos</h4>
+                    <p>Universidad Veracruzana</p>
+                    <span class="promedio">9.3 PG</span>
+                  </td>
+                </tr>
+              </table>
+              <table>
+                <tr>
+                  <td class="datos">
+                    <h3>AGOSTO 2013 - JULIO 2016</h3>
+                  </td>
+                  <td rowspan="2" class="descripcion">
+                    Poza Rica, Veracruz
+                  </td>
+                </tr>
+                <tr>
+                  <td>
+                    <h4>Técnico en Contabilidad</h4>
+                    <p>CBTis N° 78</p>
+                    <span class="promedio"> PG</span>
+                  </td>
+                </tr>
+              </table>
+              <table>
+                <tr>
+                  <td class="datos">
+                    <h3>Diciembre 2022 - Marzo 2023</h3>
+                  </td>
+                  <td rowspan="2" class="descripcion">
+                    Bootcamp Online
+                  </td>
+                </tr>
+                <tr>
+                  <td>
+                    <h4>Bootcamp de JavaScript</h4>
+                    <p>Código Facilito</p>
+                    <span class="promedio"> N/A PG</span>
+                  </td>
+                </tr>
+              </table>
+              <table>
+                <tr>
+                  <td class="datos">
+                    <h3>Julio - Octubre 2022</h3>
+                  </td>
+                  <td rowspan="2" class="descripcion">
+                    Bootcamp Online
+                  </td>
+                </tr>
+                <tr>
+                  <td>
+                    <h4>Bootcamp de Frontend</h4>
+                    <p>Código Facilito</p>
+                    <span class="promedio"> N/A PG</span>
+                  </td>
+                </tr>
+              </table>
+              <table>
+                <tr>
+                  <td class="datos">
+                    <h3>Febrero - Mayo 2022</h3>
+                  </td>
+                  <td rowspan="2" class="descripcion">
+                    Bootcamp Online
+                  </td>
+                </tr>
+                <tr>
+                  <td>
+                    <h4>Bootcamp de Introducción a la Programación</h4>
+                    <p>Código Facilito</p>
+                    <span class="promedio"> N/A PG</span>
+                  </td>
+                </tr>
+              </table>
+            </div>
+            <div class="col col-resumen">
+              <span class="titulo">Experiencia Laboral</span>
+              <table>
+                <tr>
+                  <td class="datos">
+                    <h3>Enero 2021 - Actualidad</h3>
+                  </td>
+                  <td rowspan="2" class="descripcion">
+                    Poza Rica, Veracruz
+                  </td>
+                </tr>
+                <tr>
+                  <td>
+                    <h4>Mueblería y Novedades "El Hogar"</h4>
+                    <p>Administrador</p>
+                  </td>
+                </tr>
+              </table>
+              <table>
+                <tr>
+                  <td class="datos">
+                    <h3>Julio 2022 - Actualidad</h3>
+                  </td>
+                  <td rowspan="2" class="descripcion">
+                    Poza Rica, Veracruz
+                  </td>
+                </tr>
+                <tr>
+                  <td>
+                    <h4>Taller Autorizado MABE</h4>
+                    <p>Administrador</p>
+                  </td>
+                </tr>
+              </table>
+              <table>
+                <tr>
+                  <td class="datos">
+                    <h3>Julio - Octubre 2020</h3>
+                  </td>
+                  <td rowspan="2" class="descripcion">
+                    Poza Rica, Veracruz
+                  </td>
+                </tr>
+                <tr>
+                  <td>
+                    <h4>FASTY</h4>
+                    <p>Ejecutivo de Ventas</p>
+                  </td>
+                </tr>
+              </table>
+              <table>
+                <tr>
+                  <td class="datos">
+                    <h3>Abril - Julio 2020</h3>
+                  </td>
+                  <td rowspan="2" class="descripcion">
+                    Poza Rica, Veracruz
+                  </td>
+                </tr>
+                <tr>
+                  <td>
+                    <h4>TotalPlay</h4>
+                    <p>Ejecutivo de Ventas</p>
+                  </td>
+                </tr>
+              </table>
+              <table>
+                <tr>
+                  <td class="datos">
+                    <h3>Agosto 2019 - Marzo 2020</h3>
+                  </td>
+                  <td rowspan="2" class="descripcion">
+                    Poza Rica, Veracruz
+                  </td>
+                </tr>
+                <tr>
+                  <td>
+                    <h4>SUMIMSA</h4>
+                    <p>Becario</p>
+                  </td>
+                </tr>
+              </table>
+            </div>
+          </div>
+        </div>
+      </section>
+
+     <!-- SECCION HABILIDADES -->
+      <section class="habilidades" id="habilidades">
+        <div class="contenido-seccion">
+          <h2 class="titulo-seccion">Mis habilidades</h2>
+          <h3>Me especializo en</h3>
+          <div class="fila">
+            <div class="col">
+              <span>HTML/CSS</span>
+              <div class="cont-barra">
+                <div class="barra" id="html">
+                <!-- mediante javascript luego genereremos 17 barritas con clase e -->
+                </div>
+                <span>80%</span>
+              </div>
+            </div>
+            <div class="col">
+              <span>JAVASCRIPT</span>
+              <div class="cont-barra">
+                <div class="barra" id="javascript">
+                <!-- mediante javascript luego genereremos 17 barritas con clase e -->
+                </div>
+                <span>20%</span>
+              </div>
+            </div>
+          </div>
+          <div class="fila">
+            <div class="col">
+              <span>PYTHON</span>
+              <div class="cont-barra">
+                <div class="barra" id="python">
+                <!-- mediante javascript luego genereremos 17 barritas con clase e -->
+                </div>
+                <span>30%</span>
+              </div>
+            </div>
+            <div class="col">
+              <span>JAVA</span>
+              <div class="cont-barra">
+                <div class="barra" id="java">
+                  <!-- mediante javascript luego genereremos 17 barritas con clase e -->
+                </div>
+                <span>20%</span>
+              </div>
+            </div>
+          </div>
+          <div class="fila">
+            <div class="col">
+              <span>SQL</span>
+              <div class="cont-barra">
+                <div class="barra" id="sql">
+                  <!-- mediante javascript luego genereremos 17 barritas con clase e -->
+                </div>
+                <span>30%</span>
+              </div>
+            </div>
+          </div>
+        </div>  
+      </section>
+      <section class="portafolio" id="portafolio">
+        <div class="contenido-seccion">
+          <h2 class="titulo-seccion">Mi Portafolio</h2>
+          <div class="fila">
+            <div class="proyecto proyecto-1">
+              <img src="./assets/img/Proyecto3.jpg" alt="">
+              <div class="info">
+                <h4>PokéWeb</h4>
+                <p>Página web creada con HTML, CSS y JS, para el proyecto del Bootcamp de "Frontend" de Código Facilito.</p>
+              </div>
+            </div>
+            <div class="proyecto proyecto-2">
+              <img src="./assets/img/proyecto2.gif" alt="">
+              <div class="info">
+                <h4>Flappy Mario</h4>
+                <p>Videojuego hecho con Python, para el proyecto final del Bootcamp de "Introducción a la Programación" de Código Facilito.</p>
+              </div>
+            </div>
+          </div>
+          <div class="fila">
+            <div class="proyecto proyecto-3">
+              <img src="./assets/img/Proyecto1.jpg" alt="">
+              <div class="info">
+                <h4>Réplica de Diseño Web</h4>
+                <p>Práctica CSS para el curso de Launch-X by Innovacción Virtual</p>
+              </div>
+            </div>
+            <div class="proyecto proyecto-4">
+              <img src="./assets/img/Proyecto4.jpg" alt="">
+              <div class="info">
+                <h4>Página de League of Legends</h4>
+                <p>Página Web creada únicamente con HTML, para la materia de Sistemas de Información Basadas en Web de la carrera universitaria</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      
+      <!-- SECCTION C O N T A C T O -->
+      <section id="contacto">
+        <h3 class="titulo-seccion">Contáctame</h3>
+        <div class="contenedor-form">
+          <form action="">
+            <div class="fila mitad">
+              <input type="text" placeholder="Nombre Completo" class="input-mitad">
+              <input type="email" placeholder="Dirección de Email" class="input-mitad">
+            </div>
+            <div class="fila">
+              <input type="text" placeholder="Asunto" class="input-full">
+            </div>
+            <div class="fila">
+              <textarea name="" id="" cols="30" rows="10" placeholder="Tu Mensaje..." class="input-full"></textarea>
+            </div>
+              <input type="submit" value="Enviar Mensaje" class="btn-enviar">
+          </form>
+        </div>
+      </section>
+    </main>
+
+    <!--Pie de pagina-->
+    <footer class="footer section">
+      <div class="footer__container container grid">
+        <div class="footer__content">
+          <a href="#" class="footer__logo">IICV</a>
+          <p class="footer__description">
+            Portafolio Web <br />
+            by Irving Iván Cuevas Vergara
+          </p>
+          <div class="footer__social">
+            <a href="https://www.facebook.com/profile.php?id=100087490119705" target="_blank" class="footer__social-link">
+              <i class="bx bxl-facebook"></i>
+            </a>
+            <a href="https://www.instagram.com/ivan_cvergara" target="_blank" class="footer__social-link">
+              <i class="bx bxl-instagram-alt"></i>
+            </a>
+            <a href="https://twitter.com/ivan_cvergara" target="_blank" class="footer__social-link">
+              <i class="bx bxl-twitter"></i>
+            </a>
+          </div>
+        </div>
+
+        <div class="footer__content">
+          <a href="#home"><h3 class="footer__title">Inicio</h3></a>
+        </div>
+
+        <div class="footer__content">
+          <a href="#about"><h3 class="footer__title">Acerca de Mí</h3></a>
+        </div>
+
+        <div class="footer__content">
+          <a href="#resumen"><h3 class="footer__title">Resumen</h3></a>
+        </div>
+
+        <div class="footer__content">
+          <a href="#habilidades"><h3 class="footer__title">Habilidades</h3></a>
+        </div>
+
+        <div class="footer__content">
+          <a href="#habilidades"><h3 class="footer__title">Portafolio</h3></a>
+        </div>
+
+        <div class="footer__content">
+          <a href="#contacto"><h3 class="footer__title">Contacto</h3></a>
+        </div>
+      </div>
+
+      <span class="footer__copy">&#169; Irving Iván Cuevas Vergara</span>
+
+    </footer>
+    <!-- #endregion -->
+
+    <!--Scroll para que se revelen los elementos de forma suave-->
+    <script src="https://unpkg.com/scrollreveal@4.0.0/dist/scrollreveal.min.js"></script>
+
+    <script src="./assets/js/main.js"></script>
+    <script src="./assets/js/app.js"></script>
+  </body>
+</html>
