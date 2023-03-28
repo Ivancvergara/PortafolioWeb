@@ -176,6 +176,10 @@ button{
   cursor: pointer;
 }
 
+#header .nav__menu .nav__list .nav__item a {
+  text-transform: uppercase;
+}
+
 #header .nav__menu .nav__list .nav__item a:hover {
   color: #00a9d4;
 
@@ -184,8 +188,6 @@ button{
 #header .nav__menu .nav__list .nav__item .seleccionado {
   color: #00a9d4;
   font-weight: var(--font-medium);
-  text-transform: uppercase;
-
 }
 
 @media screen and (max-width: 767px){
