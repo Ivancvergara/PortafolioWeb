@@ -903,13 +903,6 @@ button{
     width: max-content;
     row-gap: 1rem;
   }
-
-  .category__container,
-  .trick__container{
-    grid-template-columns: .8fr;
-    justify-content: center;
-  }
-  
 }
 
 /* For medium devices */
@@ -917,15 +910,6 @@ button{
   .about__container{
     grid-template-columns: .8fr;
     justify-content: center;
-  }
-
-  .newsletter__container{
-    display: grid;
-    grid-template-columns: .7fr;
-    justify-content: center;
-  }
-  .newsletter__description{
-    padding: 0 3rem;
   }
 }
 
@@ -988,10 +972,6 @@ button{
   }
   .about__img{
     width: 250px;
-  }
-
-  .newsletter__container{
-    grid-template-columns: .5fr;
   }
 
   .footer__container{
