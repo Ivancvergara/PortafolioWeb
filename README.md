@@ -8,3 +8,7 @@ Una lista de tecnologías usadas en este proyecto:
 * JavaScript
 * Scroll Revel
 * Github API
+
+## Prueba
+Se configuró el repositorio para poder visualizar el proyecto a través del servido de Github Pages, para ellos hay que ingresar al siguiente enlace:
+https://ivancvergara.github.io/PortafolioWeb/
